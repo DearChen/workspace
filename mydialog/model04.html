@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>calldialog demo</title>
+<link rel="stylesheet" href="css/calldialog.css" type="text/css"/>
+<style type="text/css">
+.value{
+	width:400px;
+	height:60px;
+	border:1px #000000 solid;
+}
+</style>
+<!-- 脚本 -->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/calldialog.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".value").calldialog({
+			mothed:'click',
+			cssVersion:"v1",	//css版本控制，功能未完成，等待更新……
+			titleContent:"",
+			closeImage:false,
+			width:380,
+			isDrag:false,
+			closeButton:true,
+			content:"<div><strong>提示主标题</strong></div><p>这里是提示内容。这里是提示内容。这里是提示内容。这里是提示内容。这里是提示内容。这里是提示内容。这里是提示内容。</p><input type='text' value='' />",
+			bottomContent:"<button type='button' class='ck-btn ck-blue'>ceshi</button>"
+			+"<button type='button' class='ck-btn ck-white'>submit</button>",
+			btnClick:function(ele){
+				var dom = $(ele).closest(".dialogue-about");
+				var str = dom.find("input").val();
+				return true;
+			}
+		});
+	});
+</script>
+</head>
+<body style="margin:0;padding:0;">
+	<br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/>
+	<div class="value">对话框</div>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+</body>
+</html>

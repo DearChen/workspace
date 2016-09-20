@@ -1,0 +1,191 @@
+﻿.ck-cover{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top: 0;left: 0;
+    z-index:2147483649;
+    filter:alpha(Opacity= 0);/* 支持IE的浏览器透明度50% */
+    -moz-opacity:0;/*MozFF透明度50%*/
+    opacity: 0; /*支持CSS3的浏览器(FF1.5也支持)透明度50%*/
+    background-color:#0C0C0E;
+}
+.ck-fadein{
+    filter:alpha(Opacity= 50);/* 支持IE的浏览器透明度50% */
+    -moz-opacity:0.5;/*MozFF透明度50%*/
+    opacity: 0.5; /*支持CSS3的浏览器(FF1.5也支持)透明度50%*/
+}
+.ck-dialogue{
+    font-family: "微软雅黑";
+    background:#ffffff;
+    position:absolute;
+    z-index:2147483649;
+    /*border:1px #CCCCCC solid;*/
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.06) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    overflow: hidden;
+    border-radius:2px;
+}
+.dialogue-title{
+	min-height: 44px;
+	line-height: 44px;
+    background-color:#F9F9F9;
+    text-align:left;
+    border-width:1px;
+    border-style:none none solid none;
+    border-color:#E8E8E8;
+    -moz-user-select:none;
+    moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.ck-close{
+    width:14px;
+    height:14px;
+    right:15px;
+    top:15px;
+    background-image:url(../images/close14.png);
+    position:absolute;
+    background-position:0px 0px;
+    z-index: 2;
+    cursor:pointer;
+}
+.dialogue-title a:hover{
+    background-position:-14px 0px;
+}
+.dialogue-about{
+    min-height:45px;
+    text-align:center;
+    vertical-align:middle;
+}
+.dialogue-bottom{
+    text-align:right;
+	padding-right: 12px;
+}
+.dialogue-bottom button{
+	margin: 10px 2px;
+}
+.ck-btn{
+    display: inline-block;
+    padding: 6px 20px;
+    font-size:14px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    -moz-border-radius: 4px;     /* Gecko browsers */
+    -webkit-border-radius: 4px;   /* Webkit browsers */
+    border-radius:3px;          /* W3C syntax */
+    border: 1px solid transparent;
+}
+.dialogue-title strong{
+    color:#202020;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.ck-cancel{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.ck-cancel:hover{
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.ck-success{
+    color: #fff;
+    background-color: #5CB85C;
+    border-color: #4CAE4C;
+}
+.ck-success:hover{
+    background-color: #449d44;
+    border-color: #398439;
+}
+.ck-warning{
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+.ck-warning:hover{
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+.ck-danger{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.ck-danger:hover{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+.ck-blue{
+    color: #fff;
+    background-color: #56C9C1;
+    border-color: #56C9C1;
+}
+.ck-dialogue button.ck-disblue{
+    color: #fff;
+    background-color: #8DC9C4;
+    border-color: #94CCC8;
+}
+.ck-blue:hover{
+    background-color: #26BEB4;
+    border-color: #26BEB4;
+}
+.ck-white{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.ck-white:hover{
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+
+/*------------版本样式-------------------*/
+body .ck-coverv1{
+
+}
+body .ck-dialoguev1{
+    font-family: "微软雅黑";
+}
+body .dialogue-titlev1{
+    border-color:#fff;
+    background-color:#fff;
+}
+body .ck-closev1{
+    
+}
+body .dialogue-aboutv1{
+    
+}
+.dialogue-aboutv1 strong{
+    font-size: 16px;
+    font-weight: 300;
+    margin:0 38px;
+    color: #202020;
+}
+.dialogue-aboutv1 p{
+    font-size: 14px;
+    margin:15px 38px;
+    color:#666666;
+    text-align: left;
+}
+body .dialogue-bottomv1{
+    padding-right: 0px;
+    margin-bottom:36px;
+    text-align: center;
+}
+body .dialogue-bottomv1 button{
+    margin: 10px 5px;
+}

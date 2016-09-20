@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>calldialog demo</title>
+<link rel="stylesheet" href="css/calldialog.css" type="text/css"/>
+<style type="text/css">
+.value{
+	width:400px;
+	height:60px;
+	border:1px #000000 solid;
+}
+</style>
+<!-- 脚本 -->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/calldialog.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(null).calldialog({
+			directShow:true,
+			width:440,
+			titleContent:"<strong>直接弹出的交互对话框</strong>",
+			content:"<p style='background-color:#F3F3F3;margin:20px;padding:10px;text-align:left;font-size:12px;'>hello：今天吃饭了吗？</p><textarea placeholder='你有什么事……' style='width:396px;height:72px;border:1px solid #D7D7D7;border-radius:3px;resize: none;font-family:微软雅黑;'></textarea>",
+			bottomContent:"<button type='button' class='ck-btn ck-blue ck-disblue'>发送</button><button type='button' class='ck-btn ck-white'>取消</button>",
+			afterCall:function(dom){
+				dom.find(".dialogue-bottom").css("text-align","center");
+				dom.find(".dialogue-bottom button").css("margin","20px 4px");
+				dom.find("textarea").on("keyup",function(){
+					var that = $(this);
+					var btn = dom.find(".ck-blue")
+					if(that.val().length){
+						btn.removeClass("ck-disblue");
+					}else{
+						btn.addClass("ck-disblue");
+					}
+				});
+			},
+			btnClick:function(ele){
+				if($(ele).hasClass("ck-blue")){
+					return false;
+				}
+				return true;
+			}
+		});
+	});
+</script>
+</head>
+<body style="margin:0;padding:0;">
+	<br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/>
+	<div class="value">对话框</div>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+</body>
+</html>

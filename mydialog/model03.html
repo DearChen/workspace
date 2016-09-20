@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>calldialog demo</title>
+<link rel="stylesheet" href="css/calldialog.css" type="text/css"/>
+<style type="text/css">
+.value{
+	width:400px;
+	height:60px;
+	border:1px #000000 solid;
+}
+</style>
+<!-- 脚本 -->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/calldialog.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".value").calldialog({
+			mothed:'click',
+			overCancel:true,
+			height:120,
+			content:"<p>封装的几个按钮样式。在calldialog.css中。</p>",
+			bottomContent:"<button type='button' class='ck-btn ck-success'>ceshi</button>"
+			+"<button type='button' class='ck-btn ck-warning'>ceshi</button>"
+			+"<button type='button' class='ck-btn ck-white'>ceshi</button>"
+			+"<button type='button' class='ck-btn ck-danger'>ceshi</button>",closeButton:true});
+	});
+</script>
+</head>
+<body style="margin:0;padding:0;">
+	<br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/>
+	<div class="value">对话框</div>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+	<br/><hr/><br/><hr/><br/><hr/>
+</body>
+</html>
